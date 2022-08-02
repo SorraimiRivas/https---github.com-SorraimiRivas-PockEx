@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {View, Text, SafeAreaView, Image} from 'react-native';
 import axios from 'axios';
+import COLORS from './assets/colors';
 
 const App = () => {
   const [pokemon, setPokemon] = React.useState('');
@@ -22,7 +23,7 @@ const App = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#74CB48',
+        backgroundColor: COLORS.grass,
       }}>
       <Text style={{fontSize: 50}}>{pokemon.name}</Text>
       <Text>{type}</Text>
